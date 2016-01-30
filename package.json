@@ -1,0 +1,29 @@
+{
+  "name": "pillar-base",
+  "description": "A basic pillarjs server example. Find out more about pillarjs at http://pillarjs.github.io/",
+  "version": "0.0.1",
+  "private": false,
+  "engines": {
+    "node": "0.10.x",
+    "npm": "1.2.x"
+  },
+  "dependencies": {
+    "config-multipaas": "^0.1.0",
+    "router": "^1.1.4",
+    "send": "^0.13.1",
+    "serve-static": "^1.10.2",
+    "finalhandler": "^0.4.1"
+  },
+  "devDependencies": {
+    "tap": "^0.4.13"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ryanj/pillar-base.git"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "license": "MIT",
+  "main": "server.js"
+}
