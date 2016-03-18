@@ -7,7 +7,6 @@ var cc       = require('config-multipaas'),
 
 var config   = cc();
 var app      = Router()
-var index    = fs.readFileSync(__dirname + '/index.html');
 
 // Serve up public/ftp folder 
 app.use(serveStatic('static'))
@@ -20,6 +19,7 @@ app.get("/status", function (req, res) {
 })
 
 app.get("/", function (req, res) {
+  var index = fs.readFileSync(__dirname + '/index.html')
   res.statusCode = 200
   res.setHeader('Content-Type', 'text/html; charset=utf-8')
   res.end(index.toString())
