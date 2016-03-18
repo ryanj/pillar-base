@@ -15,6 +15,7 @@
     "finalhandler": "^0.4.1"
   },
   "devDependencies": {
+    "gulp": "^3.9.1",
     "tap": "^0.4.13"
   },
   "repository": {
